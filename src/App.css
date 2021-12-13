@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Bakbak+One&family=Black+Ops+One&family=Cherry+Swash&family=Dancing+Script:wght@700&family=Paytone+One&family=Poppins:wght@900&family=Roboto+Condensed:wght@300&display=swap");
 :root {
   --white: whitesmoke;
   --ice: #99ffff;
@@ -8,12 +7,13 @@
 
 body {
   font-family: "Poppins" sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 /*NAVBAR*/
 .logo {
-     /* transform: scale(100px, 250px); */
-     width: 65px;
+  /* transform: scale(100px, 250px); */
+  width: 65px;
 }
 
 /*MENU LINKS*/
@@ -33,13 +33,14 @@ nav ul li {
   border-top: 3px solid var(--black);
 }
 
-.navbar-brand{
+.navbar-brand {
   max-width: 17.25rem;
   padding: 0 !important;
-  height: 6rem !important;
+  height: 4rem !important;
 }
 
-.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus{
+.navbar-nav > li > a.active,
+.navbar-nav > li > a.active:focus {
   border-top: 3px solid var(--ice);
 }
 
@@ -48,6 +49,96 @@ nav ul li {
 }
 
 .navbar-custom {
-  color: #FFFFFF;
+  color: #ffffff;
   background-image: url(img/nav-bgrd.jpg);
+}
+
+/*HEADER*/
+.head {
+  position: relative;
+  background: url(img/head-bgrd.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+
+h1 {
+  background-image: url(img/R.gif);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-transform: uppercase;
+  padding: 10vh 0 0 20px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 150px;
+  padding-left: 75px;
+  padding-bottom: 300px auto;
+  font-family: "Dancing Script", sans-serif;
+}
+
+@media(max-width: 768px) {
+  h1 {
+    font-size: 1.7rem !important;
+  }
+  .type{
+    font-size: 1.3rem !important;
+  }
+  .btn-div{
+    display: none;
+  }
+}
+
+.type {
+  font-size: 2rem;
+  color: var(--ice);
+  display: block-flex;
+  flex-direction: column;
+  padding: 0 0 0 50px;
+  font-family: "Black Ops One";
+}
+
+/*HIRE BUTTON*/
+.btn-div{
+  padding: 100px 50px;
+}
+
+.button {
+  display: inline-flex;
+  height: 50px;
+  padding-left: 0;
+  background-color: transparent;
+  border: none;
+  outline: 1.5px gray;
+  border-radius: 15px;
+  overflow: hidden;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: gray;
+}
+
+.button:active {
+  background-color: wheat;
+}
+
+.button-text,
+.button-icon {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 24px;
+  color: gold;
+  height: 100%;
+}
+
+.button-icon {
+  font-size: 1.5em;
+  background: rgba(0, 0, 0, 0.08);
+}
+
+.anchor {
+  padding-left: 525px;
 }
